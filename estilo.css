@@ -1,0 +1,99 @@
+
+    *
+    {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    header
+    {
+        background-color: rgb(243, 117, 117);
+        display: flex;
+        flex-direction: column;
+    }
+    header a
+    {
+        display: flex;
+        text-decoration: none;
+        color: yellow;
+        border: #000000 solid 3px;
+        justify-content: space-around;
+        margin-left: 22.5%;
+        margin-bottom: 25px;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: rgb(226, 130, 130);
+        width: 50%;
+    }
+    header a:hover
+    {
+        background-color:beige;
+        color: red;
+    }
+    header img
+    {
+        width: 50%;
+        margin-left: 25%;
+        margin-bottom: -20px;
+
+    }
+    main
+    {
+        background-color: #f1deab;
+    }
+    #introducao h1
+    {
+        font-weight: 400;
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+    }
+    #introducao h2
+    {
+        display: flex;
+        justify-content: center;
+        padding-top: 10px;
+    }
+    #introducao p
+    {
+        padding-top: 20px;
+        display: flex;
+        justify-content: center;
+        font-size: 20px;
+        margin: 0px 5%;
+    }
+    article h1
+    {
+        display: flex;
+        justify-content: center;
+        padding: 10px 0px;
+        font-size: 30px;
+        
+    }
+    #receitas
+    {
+        background-color: rgb(248, 248, 215);
+        
+    }
+    #teste
+    {
+        display: flex;
+        border: solid 2px;
+    }
+    #receitas div
+    {
+        border: #ff0000 solid 1px;
+    }
+    #receitas a
+    {
+        width: 40%;
+    }
+    #receitas img
+    {
+        width: 45%;
+        display: inline;
+    }
+    footer
+    {
+        background-color: rgb(226, 130, 130);
+    }
