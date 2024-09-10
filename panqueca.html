@@ -8,44 +8,62 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Receitas pelo mundo</title>
       <link rel="shortcut icon" href="imagens/RECEITAS PELO MUNDO.png" type="image/x-icon">  <!-- Logo da página --> 
+      <link rel="stylesheet" href="estilo.css">
     </head>
     <body>
-      <header>
-         <!-- Aqui temos o nosso header onde contém o redirecionamento para as demais páginas: Home, Sobre Nós e contatos. -->
-        <nav> 
-          <a href="index.html">Home</a>
-          <a href="sobre.html">Sobre Nós</a>
-          <a href="contato.html">Contato</a>
+      <header class="header">
+        <!-- Logo -->
+        <!-- Hamburger icon -->
+        <input class="side-menu" type="checkbox" id="side-menu"/>
+        <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+        <!-- Menu -->
+        <nav class="nav">
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Quem somos</a> </li>
+                <li><a href="contato.html">Contate-nos</a></li>
+            </ul>
         </nav>
-      </header>
+        
+        <div id="introducao">
+          <!-- Nome e introdução do site -->
+          <h1>Receitas pelo mundo</h1>
+          <p>Receitas famosas do mundo inteiro</p>
+      </div>
+    </header>
         <main>
-            <!-- nome do blog -->
-            <h1>Receitas pelo mundo</h1>
               <!-- Aqui começa as instruções sobre a massa de panqueca -->   
             
-            <section class="Panqueca">
+            <section class="tutorial">
+                <br>
                 <!-- Receita de como fazer massa de panqueca -->
-                <h2>Como Fazer: </h2>  <!-- nome da receita  -->
+                <h2>Como Fazer Panqueca: </h2>  <!-- nome da receita  -->
                  <!-- Link da imagem das panquecas -->
+                  <br>
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1BJwyPqYVUGCXeo7JM13CWWtWp2nNNYeyAw&s" alt="massa de panqueca" width="300">
                  <!-- Quantas pessoas essa receita serve  -->
+                  <br>
                 <h4>Ingredientes para 3 pessoas</h4>
                 <!--Lista não ordenada para indicar os ingredientes  -->
+                <br>
                 <ul>
-                    <li>1,5 xícaras de chá de leite</li>
-                    <li>1 xícara de chá de farinha de trigo</li>
-                    <li>2 ovos</li>
-                    <li>1 colher de café de sal</li>
-                    <li>1 colher de chá de manteiga ou óleo para untar frigideira</li>
+                    <li><b>1-</b> 1,5 xícaras de chá de leite</li>
+                    <li><b>2-</b> 1 xícara de chá de farinha de trigo</li>
+                    <li><b>3-</b> 2 ovos</li>
+                    <li><b>4-</b> 1 colher de café de sal</li>
+                    <li><b>5-</b> 1 colher de chá de manteiga ou óleo para untar frigideira</li>
                 </ul>
                  <!-- Passo a passo para realizar a receita  -->
-                <h4>Passo a passo: </h4> 
+                <h4>Passo a passo: </h4>
+                <br> 
                 <!--Lista ordenada para indicar a lista do passo a passo da receita-->
                 <ol>
-                    <li>No liquidificador, bata todos os ingredientes da massa até ficar homogêneo. Deixe descansar por 20 minutos.</li>
-                    <li>Após o tempo de descanso da massa, aqueça uma frigideira antiaderente em fogo médio. Unte com manteiga ou óleo e derrame 
+                    <li><b>1-</b> No liquidificador, bata todos os ingredientes da massa até ficar homogêneo. Deixe descansar por 20 minutos.</li>
+                    
+                    <li><b>2-</b> Após o tempo de descanso da massa, aqueça uma frigideira antiaderente em fogo médio. Unte com manteiga ou óleo e derrame 
                     com uma concha da massa no centro fazendo movimentos circulares para espalhar a massa na frigideira.</li>
-                    <li>Quando a panqueca perder o aspecto de molhada e começar a aparecer bolhas,
+                    
+                    <li><b>3-</b> Quando a panqueca perder o aspecto de molhada e começar a aparecer bolhas,
                     vire com uma espátula. Aguarde dourar do outro lado e transfira para um prato. Repita o procedimento até acabar a massa.</li>
                 </ol>
             </section>

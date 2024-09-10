@@ -32,28 +32,14 @@ a{
     text-decoration: none;
 }
 
-ul{
-    list-style: none;
-}
-
 /* Header */
 
 .header{
     background-color: var(--black);
     box-shadow: 1px 1px 5px 0px var(--gray);
-    position: sticky;
     top: 0;
     width: 100%;
 }
-
-/* Logo */
-.logo{
-    display: inline-block;
-    color: var(--white);
-    font-size: 40px;
-    margin-left: 10px;
-}
-
 /* Nav menu */
 .nav{
     width: 100%;
@@ -137,31 +123,75 @@ ul{
 body:has(.side-menu:checked) {
   overflow: hidden;
 }
-
-/* Responsiveness */
-@media (min-width: 768px) {
-    .nav{
-        max-height: none;
-        top: 0;
-        position: relative;
-        float: right;
-        width: fit-content;
-        background-color: transparent;
-    }
-    .menu li{
-        float: left;
-    }
-    .menu a:hover{
-        background-color: transparent;
-        color: var(--gray);
-
-    }
-
-    .hamb{
-        display: none;
-    }
+.tutorial
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-    main
+#quem-somos {
+    margin-top: 50px;   
+    font-size: 35px;
+    text-align: center;
+}
+#quem
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+#contato {
+    padding-top: 50px;
+    font-size: 35px;
+    text-align: center;
+}
+td
+{
+    font-size: 15px;
+}
+#main-cont
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+hr {
+    margin-left: -20%;
+    margin-right: -20%;
+}
+
+.nome {
+    color: var(--black);
+    font-size: 25px;
+    padding-left: 20px;
+}
+
+.imagens {
+    text-align: center;
+    margin-top: 30px;
+    border-radius: 500px;
+    height: 300px;
+    width: 200px;
+}
+
+.texto {
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: justify;
+    line-height: 25px;
+}
+
+.tutorial ul li
+{
+    list-style: none;
+}
+.tutorial ol li
+{
+    list-style: none;
+    padding-bottom: 20px;
+}
+main
     {
         background-color: #F5EFE6;
     }
@@ -178,15 +208,19 @@ body:has(.side-menu:checked) {
         font-weight: 400;
         padding-top: 20px;
     }
-    #introducao h2
-    {
-        padding-top: 10px;
-    }
+
     #introducao p
     {
         padding-top: 20px;
+        padding-bottom: 20px ;
         font-size: 20px;
         margin: 0px 5%;
+    }
+    #Logo
+    {
+        width: 50%; 
+        margin-left: 25%;
+        justify-content: center;
     }
     #titulo
     {
@@ -204,12 +238,19 @@ body:has(.side-menu:checked) {
     {
        margin: 20px 10px;
     }
+    a
+    {
+        color: #21752a;
+        text-decoration: none;
+    }
     .alinhar
     {
         display: flex;
         align-items: center;
         flex-direction: column;
         justify-content: center;
+        text-align: justify;
+
     }
     #receitas img
     {
@@ -225,4 +266,26 @@ body:has(.side-menu:checked) {
     {
         padding: 10px;
         line-height: 30px;
+    }
+    @media (min-width: 768px) {
+        .nav{
+            max-height: none;
+            top: 0;
+            position: relative;
+            float: right;
+            width: fit-content;
+            background-color: transparent;
+        }
+        .menu li{
+            float: left;
+        }
+        .menu a:hover{
+            background-color: transparent;
+            color: var(--gray);
+    
+        }
+    
+        .hamb{
+            display: none;
+        }
     }

@@ -7,71 +7,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
+    <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-    <header>
-        <!-- aqui temos o header que redireciona para nossas outras paginas  -->
-          <a href="index.html">Home</a>
-          <a href="sobre.html">Sobre Nós</a>
-          <a href="contato.html">Contato</a>
+    <header class="header">
+        <!-- Logo -->
+        <!-- Hamburger icon -->
+        <input class="side-menu" type="checkbox" id="side-menu"/>
+        <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+        <!-- Menu -->
+        <nav class="nav">
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Quem somos</a> </li>
+                <li><a href="contato.html">Contate-nos</a></li>
+            </ul>
         </nav>
-      </header>
-    <main>
+        
+        <div id="introducao">
+          <!-- Nome e introdução do site -->
+          <h1>Receitas pelo mundo</h1>
+          <p>Receitas famosas do mundo inteiro</p>
+      </div>
+    </header>
+    <main id="main-cont">
         <!-- aqui temos o cabeçalho com o nome da nossa pagina -->
-        <h1>Contate-nos:</h1>
-        <br><br>
-        <table border="2">
-            <!-- aqui temos a nossa lista com os contatos do nosso grupo -->
-            <tr>
-                
-                <th><h1>Pietro Gimenez</h1></th>
-                <th><h1>Email</h1> </th>
+        <div id="contato">
+            <h5>Contate-nos:</h5>
+            <br>
+            <hr>
+            <br>
+        </div>
+        <h2>
+            <table border="3"><!--cria uma tabela-->
+              <tr><!--e a primeira linha da tabela-->
+                  <th>Email escolar</th><!--sao os titulos da tabela-->
+              </tr>
+      
+              <tr>
+                  <td>pietro.gimenez@etec.sp.gov.br</td><!--sao os dados da tabela-->
+              </tr>
+      
+              <tr>
+                <td>pedro.zago5@etec.sp.gov.br</td>
             </tr>
+            <tr>
+                <td>pedro.aguiar21@etec.sp.gov.br</td>
+            </tr>
+          </table>
+          </h2>
+
+          <br><br>
+
+          <form><!--cria um formulario-->
+            <h2>Entre em contato com agente</h2>
+            <br>
+
+            Nome: 
+              <input type="text" name="Nome"><br> <br><!--tipo text permite voce escrever as palavras no tipo texto-->
     
-            <tr>
-                <!-- aqui temos a foto e email de Pietro Gimenez -->
-                <td> <img src="imagens/Pietro.jpeg" alt="Imagem pietro gimenez" width="230" height="300"></td>
-                <td><h1>pietro.gimenez@etec.sp.gov.br</h1></td>
-            </tr>
+            Email:
+             <input type="text" name="Email"><br> <br>
     
-            <tr>
-                <th><h1>Pedro Zago</h1></th>
-                <th><h1>Email</h1></th>
-            </tr>
-    
-            <tr>
-                <!-- aqui temos a foto e email de Pedro Zago -->
-                <td><img src="imagens/Pedro Zago.jpeg" alt="Imagem Pedro Zago" width="230" height="300"></td>
-                <td><h1>pedro.zago5@etec.sp.gov.br</h1></td>
-            </tr>
-            <tr>
-                <th><h1>Pedro Aguiar</h1></th>
-                <th><h1>Email</h1></th>
-            </tr>
-    
-            <tr>
-                <!-- aqui temos a foto e email de Pedro Aguiar -->
-                <td><img src="imagens/Pedro Aguiar.jpeg" alt="Imagem Pedro Aguia" width="230" height="300"></td>
-                <td><h1>pedro.aguiar21@etec.sp.gov.br</h1></td>
-            </tr>
-        </table>
-        <form method="get">
-            <!-- aqui temos o formulario para os usuarios nos contatarem -->
+            Sexo:
+             <input type="radio" name="Sexo" value="M"> Masculino<!--tipo radio vc escolhe apenas uma opçao-->
+             <input type="radio" name="Sexo" value="F"> Feminino
+            
             <br><br>
-            Digite suas informações e depois a mensagem que quer nos contatar
+             <textarea></textarea><br><!--textarea abre uma caixa de texto para o usuario escrever-->
+    
+            
+            <input id="botao" type="submit" name="cadastrar">
+            
             <br><br>
-            Nome: <br>
-            <!-- aqui temos o local para o usuario colocar seu nome -->
-            <input type="text" id="nome" name="nome" required><br><br>
-            Email: <br>
-            <!-- aqui temos um local para o usuario colocar seu email -->
-            <input type="text"><br><br>
-            Assunto: <br>
-            <!-- aqui temos um local para o usuario colocar o assunto que querem nos contatar -->
-            <input type="textarea"><br><br>
-            <!-- aqui temos o botão para enviar a mesagem para nós -->
-            <button type="submit">Enviar Mensagem</button>
-          </form>
+        </form>
           <br>
           <hr>
     </main>
