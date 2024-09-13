@@ -265,6 +265,10 @@ main
         padding: 10px;
         line-height: 30px;
     }
+    #tres-colunas
+    {
+        display: none;
+    }
     /* media queries sobre o menu hamburguer */
     @media (min-width: 768px) {
         .nav{
@@ -290,10 +294,16 @@ main
     }
 @media (min-width: 600px) and (max-width: 900px)
 {
+    
+    .uma-coluna{
+        display: block;
+    }
+
     .duas-colunas
     {
         display: flex;
     }
+    
     #receitas img
     {
         width: 150px;
@@ -306,9 +316,22 @@ main
 }
 @media (min-width: 901px)
 {
-    .tres-colunas
+    .duas-colunas
+    {
+        display: none;
+    }
+    #Logo{
+        width: 9%;
+    }
+    .uma-coluna
+    {
+        display: block;
+    }
+    #tres-colunas
     {
         display: flex;
+        flex-direction: row;
+        justify-content: space-around;
     }
     #receitas img
     {
