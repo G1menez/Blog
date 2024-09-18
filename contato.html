@@ -3,17 +3,19 @@
     Data: 12/04/2024  -->
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
     <link rel="stylesheet" href="estilo.css">
 </head>
+
 <body>
     <header class="header">
         <!-- Logo -->
         <!-- Hamburger icon -->
-        <input class="side-menu" type="checkbox" id="side-menu"/>
+        <input class="side-menu" type="checkbox" id="side-menu" />
         <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
         <!-- Menu -->
         <nav class="nav">
@@ -23,12 +25,12 @@
                 <li><a href="contato.html">Contate-nos</a></li>
             </ul>
         </nav>
-        
+
         <div id="introducao">
-          <!-- Nome e introdução do site -->
-          <h1>Receitas pelo mundo</h1>
-          <p>Receitas famosas do mundo inteiro</p>
-      </div>
+            <!-- Nome e introdução do site -->
+            <h1>Receitas pelo mundo</h1>
+            <p>Receitas famosas do mundo inteiro</p>
+        </div>
     </header>
     <main id="main-cont">
         <!-- aqui temos o cabeçalho com o nome da nossa pagina -->
@@ -40,54 +42,79 @@
         </div>
         <h2>
             <table border="3"><!--cria uma tabela-->
-              <tr><!--e a primeira linha da tabela-->
-                  <th>Email escolar</th><!--sao os titulos da tabela-->
-              </tr>
-      
-              <tr>
-                  <td>pietro.gimenez@etec.sp.gov.br</td><!--sao os dados da tabela-->
-              </tr>
-      
-              <tr>
-                <td>pedro.zago5@etec.sp.gov.br</td>
-            </tr>
-            <tr>
-                <td>pedro.aguiar21@etec.sp.gov.br</td>
-            </tr>
-          </table>
-          </h2>
+                <tr><!--e a primeira linha da tabela-->
+                    <th>Email escolar</th><!--sao os titulos da tabela-->
+                </tr>
 
-          <br><br>
+                <tr>
+                    <td>pietro.gimenez@etec.sp.gov.br</td><!--sao os dados da tabela-->
+                </tr>
 
-          <form><!--cria um formulario-->
+                <tr>
+                    <td>pedro.zago5@etec.sp.gov.br</td>
+                </tr>
+                <tr>
+                    <td>pedro.aguiar21@etec.sp.gov.br</td>
+                </tr>
+            </table>
+        </h2>
+
+        <br><br>
+
+        <form><!--cria um formulario-->
             <h2>Entre em contato com agente</h2>
             <br>
 
-            Nome: 
-              <input type="text" name="Nome"><br> <br><!--tipo text permite voce escrever as palavras no tipo texto-->
-    
+            Nome:
+            <input type="text" name="Nome"><br> <br><!--tipo text permite voce escrever as palavras no tipo texto-->
+
             Email:
-             <input type="text" name="Email"><br> <br>
-    
+            <input type="text" name="Email"><br> <br>
+
             Sexo:
-             <input type="radio" name="Sexo" value="M"> Masculino<!--tipo radio vc escolhe apenas uma opçao-->
-             <input type="radio" name="Sexo" value="F"> Feminino
-            
+            <input type="radio" name="Sexo" value="M"> Masculino<!--tipo radio vc escolhe apenas uma opçao-->
+            <input type="radio" name="Sexo" value="F"> Feminino
+
             <br><br>
-             <textarea></textarea><br><!--textarea abre uma caixa de texto para o usuario escrever-->
-    
-            
+            <textarea></textarea><br><!--textarea abre uma caixa de texto para o usuario escrever-->
+
+
             <input id="botao" type="submit" name="cadastrar">
-            
+
             <br><br>
         </form>
-          <br>
-          <hr>
+        <br>
+        <hr>
     </main>
     <footer>
-        <!-- aqui temos o footer com o intuito do nosso blog -->
-        <p>Este projeto é desenvolvido em conjunto com a disciplina de Programação Web I da Etec Polivalente de Americana e tem como a finalidade de estudar e aprofundar os conhecimentos em HTML, CSS e JS</p>
+        <!--Footer indicativo, indica o propósito do desenvolvimento deste conteúdo -->
+        <div>
+            <p>
+                Este projeto é desenvolvido em conjunto com a disciplina de Programação Web I
+                <br>
+                a finalidade de estudar e aprofundar os conhecimentos em HTML, CSS e JS
+                <br><br>
+                © Copyright 2024 pertence a Pietro Gimenez, Pedro Aguiar e Pedro Zago
+                <br>
+                - Todos os Direitos reservados -
+            </p>
+        </div>
 
+        <div id="links_footer">
+            <p>
+                Receitas pelo mundo
+                <br><br>
+                <a href="#">Termos e condições de uso</a>
+                <br>
+                <a href="#">Política de privacidade</a>
+                <br>
+                <a href="#">Política de Cookies</a>
+            </p>
+        </div>
     </footer>
 </body>
+
+</html>
+</body>
+
 </html>
