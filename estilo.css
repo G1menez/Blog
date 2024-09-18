@@ -1,11 +1,11 @@
-/* 
+/*
     Código exemplo : https://blog.logrocket.com/create-responsive-mobile-menu-css-without-javascript/
 
 */
 
 /* Tema *//* import font */
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"); 
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
 
 /* Setando as cores utilizadas no Projeto */
@@ -13,7 +13,7 @@
     --white: #f9f9f9;
     --black: #4F6F52;
     --gray: #85888C;
-} 
+}
 /* variables*/
 
 /* Resetando os padrões do HTML */
@@ -41,6 +41,10 @@ a{
     box-shadow: 1px 1px 5px 0px var(--gray);
     top: 0;
     width: 100%;
+}
+header ul
+{
+    list-style: none;
 }
 /* Nav menu */
 .nav{
@@ -82,7 +86,7 @@ a{
     position: relative;
     width: 24px;
 
-} 
+}
 
 .hamb-line::before,
 .hamb-line::after{
@@ -104,7 +108,7 @@ a{
 /* Escondendo o input checkbox */
 .side-menu {
     display: none;
-} 
+}
 
 /* Alternar ícone do menu */
 .side-menu:checked ~ nav{
@@ -125,13 +129,45 @@ a{
 body:has(.side-menu:checked) {
   overflow: hidden;
 }
+/* css input */
+.email
+{
+    width: 300px;
+    height: 30px;
+}
+#textarea
+{
+    width: 400px;
+    height: 60px;
+}
+/* tabela contatos */
+#main-cont table
+{
+    background-color: #6bbb73;
+    width: 300px;
+    height: 150px;
+    text-align: center;
+}
+/* botão contatos */
+#botao
+{
+    width: 150px;
+    height: 70px;
+    border-radius: 100px;
+    background-color: var(--black);
+    color: white;
+    margin-left: 30%;
+}
+/* conteudo passo a passo receita */
 .tutorial
 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    margin: 0 5%;
+    padding: 0 30px ;
 }
+/* imagem topo index */
 #img-receitas
 {
     height: 200px;
@@ -139,11 +175,13 @@ body:has(.side-menu:checked) {
     margin-top: 20px;
     margin-left: 20%;
 }
+/* css titulo quem somos */
 #quem-somos {
-    margin-top: 50px;   
+    margin-top: 50px;
     font-size: 35px;
     text-align: center;
 }
+/* main quem somos */
 #quem
 {
     display: flex;
@@ -151,28 +189,31 @@ body:has(.side-menu:checked) {
     text-align: center;
 
 }
+/* coonteudo pagina contato */
 #contato {
     padding-top: 50px;
     font-size: 35px;
     text-align: center;
 }
+/* tabela css da pagina contato */
 td
 {
     font-size: 15px;
 }
+/* main da pagina contato */
 #main-cont
 {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
+/* css nome quem somos */
 .nome {
     color: var(--black);
     font-size: 25px;
     padding-left: 20px;
 }
-
+/* css imagens da pagina quem somos */
 .imagens {
     text-align: center;
     margin-top: 30px;
@@ -180,27 +221,30 @@ td
     height: 300px;
     width: 200px;
 }
-
+/* css do texto da pagina quem somos */
 .texto {
     padding-left: 20px;
     padding-right: 20px;
     text-align: justify;
     line-height: 25px;
 }
-
+/* css passo a passo receitas lista  */
 .tutorial ul li
 {
     list-style: none;
 }
+
 .tutorial ol li
 {
     list-style: none;
     padding-bottom: 20px;
 }
+/* css main  */
 main
     {
         background-color: #F5EFE6;
     }
+    /* css introdução site header */
     #introducao
     {
         display: flex;
@@ -222,19 +266,22 @@ main
         font-size: 20px;
         margin: 0px 5%;
     }
+    /* css logo da pagina */
     #Logo
     {
-        width: 50%; 
+        width: 50%;
         margin-left: 25%;
         justify-content: center;
     }
+    /* css titulo do conteudo da pagina main */
     #titulo
     {
         display: flex;
         justify-content: center;
         padding: 10px 0px;
-        font-size: 30px;   
+        font-size: 30px;
     }
+    /* css pagina index de colunas individuais */
     #uma-coluna
     {
         display: flex;
@@ -245,10 +292,12 @@ main
     {
         margin: 7px;
     }
+    /* css da div receitas */
     #receitas div
     {
        margin: 20px 10px;
     }
+    /* css link geral */
     a
     {
         color: #21752a;
@@ -306,57 +355,79 @@ main
         .menu a:hover{
             background-color: transparent;
             color: var(--gray);
-    
+
         }
-    
+
         .hamb{
             display: none;
         }
     }
+    /* media queries para dispositivos de 600px a 900px */
 @media (min-width: 600px) and (max-width: 900px)
 {
+    /* titulo conteudo do index para desktop  */
     #titulo
     {
         display: none;
     }
+    /* titulo conteudo do index para mobile e tablet */
     #titulo2
     {
         margin-top: 20px;
         font-size: 25px;
         margin-left: 15%;
     }
+    /* coluna mobile */
     .uma-coluna{
         display: block;
     }
-
+    /*coluna tablet  */
     #tablet
     {
         display: flex;
         justify-content: space-around;
     }
+    /* imagem topo pagina index */
     #img-receitas
     {
         height: 350px;
     }
+    /* logo página home tablet */
     #logo
     {
         width: 9%;
     }
+    /* main da pagina quem somos */
     #quem
     {
         padding: 0 25%;
     }
+    /* tamanho imagens capa receitas index */
     #receitas img
     {
         width: 150px;
         height: 150px;
     }
+    /* alinha divs de conteudo index */
     #receitas div
     {
         justify-content: space-between;
     }
+    /* imagem do passo a passo das receitas */
+    .tutorial img
+    {
+        margin: 0 32%;
+    }
+    /* titulo passo a passo das receias */
+    .tutorial h1
+    {
+        padding-top: 5%;
+        margin-left: 35%;
+    }
+    /* media caries para tablet com menu hamburguer aberto */
 }@media (min-width: 901px) and (max-width: 1200px)
 {
+
     #quem
     {
         padding: 0 25%;
@@ -373,6 +444,22 @@ main
     }
     .uma-coluna{
         display: block;
+    }
+    .tutorial
+
+    {
+        width: 50%;
+        margin-left: 25%;
+    }
+    .tutorial img
+    {
+        margin: 0 32%;
+    }
+    /* titulo passo a passo das receias */
+    .tutorial h1
+    {
+        padding-top: 5%;
+        margin-left: 35%;
     }
 
     #tablet
@@ -405,6 +492,7 @@ main
         margin-top: 20px;
         font-size: 25px;
     }
+
     #titulo2
     {
         display: none;
@@ -422,6 +510,21 @@ main
     {
         padding: 0 25%;
     }
+    .tutorial
+
+    {
+        width: 50%;
+        margin-left: 25%;
+    }
+    .tutorial img
+{
+    margin: 0 32%;
+}
+.tutorial h1
+{
+    padding-top: 5%;
+    margin-left: 35%;
+}
     #img-receitas
     {
         height: 50vh;
@@ -432,7 +535,7 @@ main
         flex-direction: column;
     }
     #Logo{
-        width: 9%;
+        display: none ;
     }
     .uma-coluna
     {
@@ -443,5 +546,5 @@ main
         width: 200px;
         height: 200px;
     }
-    
+
 }
