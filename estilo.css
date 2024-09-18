@@ -31,9 +31,11 @@ body{
 a{
     text-decoration: none;
 }
-
+#titulo2
+{
+    display: none;
+}
 /* Header */
-
 .header{
     background-color: var(--black);
     box-shadow: 1px 1px 5px 0px var(--gray);
@@ -130,6 +132,13 @@ body:has(.side-menu:checked) {
     justify-content: center;
     align-items: center;
 }
+#img-receitas
+{
+    height: 200px;
+    width: 60%;
+    margin-top: 20px;
+    margin-left: 20%;
+}
 #quem-somos {
     margin-top: 50px;   
     font-size: 35px;
@@ -140,6 +149,7 @@ body:has(.side-menu:checked) {
     display: flex;
     flex-direction: column;
     text-align: center;
+
 }
 #contato {
     padding-top: 50px;
@@ -155,10 +165,6 @@ td
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-hr {
-    margin-left: -20%;
-    margin-right: -20%;
 }
 
 .nome {
@@ -235,6 +241,10 @@ main
         border: solid 1px #00000041;
         width: auto;
     }
+    #uma-coluna img
+    {
+        margin: 7px;
+    }
     #receitas div
     {
        margin: 20px 10px;
@@ -253,24 +263,35 @@ main
     }
     #receitas img
     {
-        width: 50%;
+        width: 30%;
     }
     footer
     {
         background-color: var(--black);
         color: #E8DFCA;
+        height:auto;
+        text-align: center;
+        padding: 10px 15px;
     }
     footer p
     {
         padding: 10px;
-        line-height: 30px;
+    }
+    #links_footer {
+        color: #E8DFCA;
+        font-size: 20px;
+        padding-top: 20px;
+      }
+    #links_footer a
+    {
+        color: #E8DFCA;
     }
     #tres-colunas
     {
         display: none;
     }
     /* media queries sobre o menu hamburguer */
-    @media (min-width: 768px) {
+    @media (min-width: 901px) {
         .nav{
             max-height: none;
             top: 0;
@@ -294,16 +315,37 @@ main
     }
 @media (min-width: 600px) and (max-width: 900px)
 {
-    
+    #titulo
+    {
+        display: none;
+    }
+    #titulo2
+    {
+        margin-top: 20px;
+        font-size: 25px;
+        margin-left: 15%;
+    }
     .uma-coluna{
         display: block;
     }
 
-    .duas-colunas
+    #tablet
     {
         display: flex;
+        justify-content: space-around;
     }
-    
+    #img-receitas
+    {
+        height: 350px;
+    }
+    #logo
+    {
+        width: 9%;
+    }
+    #quem
+    {
+        padding: 0 25%;
+    }
     #receitas img
     {
         width: 150px;
@@ -311,14 +353,83 @@ main
     }
     #receitas div
     {
-        justify-content: space-around;
+        justify-content: space-between;
     }
-}
-@media (min-width: 901px)
+}@media (min-width: 901px) and (max-width: 1200px)
 {
-    .duas-colunas
+    #quem
+    {
+        padding: 0 25%;
+    }
+    #titulo
     {
         display: none;
+    }
+    #titulo2
+    {
+        margin-top: 20px;
+        font-size: 25px;
+        margin-left: 15%;
+    }
+    .uma-coluna{
+        display: block;
+    }
+
+    #tablet
+    {
+        display: flex;
+        justify-content: space-around;
+    }
+    #img-receitas
+    {
+        height: 400px;
+    }
+    #logo
+    {
+        width: 9%;
+    }
+    #receitas img
+    {
+        width: 150px;
+        height: 150px;
+    }
+    #receitas div
+    {
+        justify-content: space-between;
+    }
+}
+@media (min-width: 1201px)
+{
+    #titulo
+    {
+        margin-top: 20px;
+        font-size: 25px;
+    }
+    #titulo2
+    {
+        display: none;
+    }
+    #tablet article
+    {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+        gap: 30px;
+        text-align: center;
+        justify-content: center;
+    }
+    #quem
+    {
+        padding: 0 25%;
+    }
+    #img-receitas
+    {
+        height: 50vh;
+    }
+    #tablet
+    {
+        display: flex;
+        flex-direction: column;
     }
     #Logo{
         width: 9%;
@@ -327,15 +438,10 @@ main
     {
         display: block;
     }
-    #tres-colunas
-    {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
     #receitas img
     {
         width: 200px;
         height: 200px;
     }
+    
 }
