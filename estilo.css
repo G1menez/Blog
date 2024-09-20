@@ -153,11 +153,13 @@ body:has(.side-menu:checked) {
 
 /* tabela contatos */
 #main-cont table {
-    background-color: #6bbb73;
+    background-color: var(--black);
     width: 300px;
     height: 150px;
     margin-bottom: 50px;
     text-align: center;
+    color: #ebe6db;
+    font-weight: 100;
 }
 
 /* botão contatos */
@@ -300,13 +302,13 @@ main {
 }
 
 /* css pagina index de colunas individuais */
-#uma-coluna {
+.uma-coluna {
     display: flex;
     border: solid 1px #00000041;
     width: auto;
 }
 
-#uma-coluna img {
+.uma-coluna img {
     margin: 7px;
 }
 
@@ -350,15 +352,12 @@ footer p {
 }
 /* css dos links do footer */
 #links_footer {
-    color: #ffffff;
+    color: #bbc8f1;
     font-size: 20px;
-}
-#links_footer{
-    color: #ffffff;    
 }
 #links_footer a
 {
-    color: white;
+    color: #bbc8f1;
 }
 /* media queries sobre o menu hamburguer */
 @media (min-width: 901px) {
@@ -401,10 +400,6 @@ footer p {
         margin-left: 15%;
     }
     
-    /* coluna mobile */
-    .uma-coluna {
-        display: block;
-    }
 
     /*coluna tablet  */
     #tablet {
@@ -472,14 +467,6 @@ footer p {
         font-size: 25px;
         margin-left: 15%;
     }
-
-    /* coluna mobile */
-    .uma-coluna {
-        display: block;
-    }
-
-
-
     .tutorial img {
         margin: 0 25%;
         width: 50%;
@@ -571,10 +558,6 @@ footer p {
     /* logo pagina index */
     #Logo {
         display: none;
-    }
-    /* divs de conteudo index */
-    .uma-coluna {
-        display: block;
     }
     /* imagens index */
     #receitas img {
