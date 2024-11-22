@@ -1,8 +1,5 @@
-<!-- Trabalho de PW - Blog de Receitas  
-    realizado pelos alunos: Pedro Zago, Pietro Gimenez e Pedro Rodrigues
-    Data: 12/04/2024  -->
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta name="description" content="receitas">
@@ -13,212 +10,417 @@
     <title>Receitas pelo mundo</title>
     <link rel="shortcut icon" href="imagens/RECEITAS PELO MUNDO.png" type="image/x-icon"> <!-- Logo da página -->
     <link rel="stylesheet" href="estilo.css">
-    <link rel="stylesheet" href="bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap-grid.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
-    <header class="header">
-        <!-- Hamburger icon -->
-        <input class="side-menu" type="checkbox" id="side-menu" />
-        <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
-        <!-- Menu -->
-        <nav class="navbar navbar-toggler" style="background-color: #e3f2fd; ">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="sobre.html">Quem somos</a> </li>
-            <li><a href="contato.html">Contate-nos</a></li>
+    <header>
+        <nav class="navbar navbar-dark navbar-fixed-top navbar-expand-md">
+            <div class="container-fluid">
+                <a class="navbar-brand me-auto" href="#">Receitas pelo mundo</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                    aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Receitas Pelo Mundo</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-center flex-grow-1 pe-3 nav-underline">
+                            <li class="nav-item">
+                                <a class="nav-link active mx-lg-2" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-lg-2" href="sobre.html">Quem somos: </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-lg-2" href="contato.html">Contate-nos </a>
+                            </li>
+                    </div>
+                </div>
+                <a href="#"><img id="Logo" src="imagens/RECEITAS PELO MUNDO.png" alt=""></a>
+            </div>
         </nav>
-
-        <section id="introducao">
-
-            <!-- Nome e introdução do site -->
-            <img src="imagens/RECEITAS PELO MUNDO.png" alt="" id="Logo">
-            <h1>Receitas pelo mundo</h1>
-            <p>Receitas famosas do mundo inteiro</p>
-            </div>
-
-    </header>
-
-    <main>
-        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active py-3 px-4" data-bs-interval="3000">
-                <div class="card">
-                    <img src="imagens/Esfiha de carne.jpg" class="d-block w-100 , card-img-top" alt="..." >
-                    <div class="card-body">
-                      <h5 class="card-title">Card with stretched link</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary stretched-link">Go somewhere</a>
-                    </div>
-                  </div>
-              </div>
-
-              <div class="carousel-item py-3 px-4" data-bs-interval="3000">
-                <div class="card">
-                    <img src="imagens/Bolinho de arroz.jpg" class="d-block w-100 , card-img-top" alt="..." >
-                    <div class="card-body">
-                      <h5 class="card-title">Card with stretched link</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary stretched-link">Go somewhere</a>
-                    </div>
-              </div>
-             </div>
-
-              <div class="carousel-item py-3 px-4" data-bs-interval="3000">
-                <div class="card">
-                    <img src="imagens/brownie.jpg" class="d-block w-100 , card-img-top" alt="..." >
-                    <div class="card-body">
-                      <h5 class="card-title">Card with stretched link</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary stretched-link">Go somewhere</a>
+        <header>
+            <main>
+                <!-- div carrousel mobile -->
+                <div class="mobile">
+                    <div id="carouselExampleAutoplaying" class="carousel slide carousel-fade" data-bs-ride="true">
+                        <!-- div conteudo carrousel -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active py-3 px-4" data-bs-interval="3000">
+                                <!-- card esfiha de carne -->
+                                <div class="card">
+                                    <img src="imagens/Esfiha de carne.jpg" class="d-block w-100 , card-img-top"
+                                        alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Esfiha de Carne</h5>
+                                        <p class="card-text">Nessa Receita você aprendera a fazer Esfihas de carne</p>
+                                        <a href="esfihacarne.html" class="btn btn-primary stretched-link">Visite a
+                                            Receita</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card Bolinho de arroz -->
+                            <div class="carousel-item py-3 px-4" data-bs-interval="3000">
+                                <div class="card">
+                                    <img src="imagens/Bolinho de arroz.jpg" class="d-block w-100 , card-img-top"
+                                        alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Bolinho de Arroz</h5>
+                                        <p class="card-text">Nessa Receita você aprendera a fazer Bolinhos de Arroz</p>
+                                        <a href="#" class="btn btn-primary stretched-link">Visite a Receita</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card Brownie -->
+                            <div class="carousel-item py-3 px-4" data-bs-interval="3000">
+                                <div class="card">
+                                    <img src="imagens/brownie.jpg" class="d-block w-100 , card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Brownie</h5>
+                                        <p class="card-text">Nessa Receita você aprendera a fazer Brownie</p>
+                                        <a href="#" class="btn btn-primary stretched-link">Visite a Receita</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card Maionese Verde -->
+                            <div class="carousel-item py-3 px-4" data-bs-interval="3000">
+                                <div class="card">
+                                    <img src="imagens/Maionese verde.jpg" class="d-block w-100 , card-img-top"
+                                        alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Maionese Verde</h5>
+                                        <p class="card-text">Nessa Receita você aprendera a fazer Maionese Verde</p>
+                                        <a href="#" class="btn btn-primary stretched-link">Visite a Receita</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card Sushi -->
+                            <div class="carousel-item py-3 px-4" data-bs-interval="3000">
+                                <div class="card">
+                                    <img src="imagens/Sushi.jpg" class="d-block w-100 , card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Sushi</h5>
+                                        <p class="card-text">Nessa Receita você aprendera a fazer Sushi</p>
+                                        <a href="#" class="btn btn-primary stretched-link">Visite a Receita</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card Feijoada -->
+                            <div class="carousel-item py-3 px-4" data-bs-interval="3000">
+                                <div class="card">
+                                    <img src="imagens/Feijoada.jpg" class="d-block w-100 , card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Feijoada</h5>
+                                        <p class="card-text">Nessa Receita você aprendera a fazer Feijoada</p>
+                                        <a href="#" class="btn btn-primary stretched-link">Visite a Receita</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- controles carrousel -->
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </div>
                     </div>
                 </div>
-               </div>
-
-            <div class="carousel-item position-relative py-3 px-4" data-bs-interval="3000">
-                <div class="card">
-                    <img src="imagens/Maionese verde.jpg" class="d-block w-100 , card-img-top" alt="..." >
-                    <div class="card-body">
-                      <h5 class="card-title">Card with stretched link</h5>
-                      <p class="card-text">Some quick e xample text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary stretched-link">Go somewhere</a>
+                <!-- div carrousel tablet -->
+                <div class="tablet">
+                    <div id="carouselExampleAutoplaying" class="carousel slide carousel-fade" data-bs-ride="true">
+                        <!-- conteudos carrousel -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active py-3 px-4" data-bs-interval="3000">
+                                <!-- card Esfiha de Carne -->
+                                <div class="card">
+                                    <img src="imagens/Esfiha de carne.jpg" class="d-block w-100 , card-img-top"
+                                        alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Esfiha de Carne</h5>
+                                        <p class="card-text">Nessa Receita você aprendera a fazer Esfihas de carne</p>
+                                        <a href="esfihacarne.html" class="btn btn-primary stretched-link">Visite a
+                                            Receita</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card de bolinho de arroz -->
+                            <div class="carousel-item py-3 px-4" data-bs-interval="3000">
+                                <div class="card">
+                                    <img src="imagens/Bolinho de arroz.jpg" class="d-block w-100 , card-img-top"
+                                        alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Bolinho de Arroz</h5>
+                                        <p class="card-text">Nessa Receita você aprendera a fazer Bolinhos de Arroz</p>
+                                        <a href="#" class="btn btn-primary stretched-link">Visite a Receita</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card Brownie -->
+                            <div class="carousel-item py-3 px-4" data-bs-interval="3000">
+                                <div class="card">
+                                    <img src="imagens/brownie.jpg" class="d-block w-100 , card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Brownie</h5>
+                                        <p class="card-text">Nessa Receita você aprendera a fazer Brownie</p>
+                                        <a href="#" class="btn btn-primary stretched-link">Visite a Receita</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- controles carrousel -->
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </div>
+                    </div>
+                    <!-- divisão de divs para display flex -->
+                    <div id="carouselExampleAutoplaying" class="carousel slide carousel-fade" data-bs-ride="true">
+                        <div class="carousel-inner">
+                            <!-- items carrousel -->
+                            <div class="carousel-item active py-3 px-4" data-bs-interval="3000">
+                                <!-- card Maionese Verde -->
+                                <div class="card">
+                                    <img src="imagens/Maionese verde.jpg" class="d-block w-100 , card-img-top"
+                                        alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Maionese Verde</h5>
+                                        <p class="card-text">Nessa Receita você aprendera a fazer Maionese Verde</p>
+                                        <a href="esfihacarne.html" class="btn btn-primary stretched-link">Visite a
+                                            Receita</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card Feijoada -->
+                            <div class="carousel-item py-3 px-4" data-bs-interval="3000">
+                                <div class="card">
+                                    <img src="imagens/Feijoada.jpg" class="d-block w-100 , card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Feijoada</h5>
+                                        <p class="card-text">Nessa Receita você aprendera a fazer Feijoada</p>
+                                        <a href="#" class="btn btn-primary stretched-link">Visite a Receita</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card Sushi -->
+                            <div class="carousel-item py-3 px-4" data-bs-interval="3000">
+                                <div class="card">
+                                    <img src="imagens/Sushi.jpg" class="d-block w-100 , card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Sushi</h5>
+                                        <p class="card-text">Nessa Receita você aprendera a fazer Sushi</p>
+                                        <a href="#" class="btn btn-primary stretched-link">Visite a Receita</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- controles carrousel -->
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          </div>
-        </div>
-
-
-        <!-- Nossas receitas -->
-        <!-- section contendo nossas os links que redirecionam para as nossas receitas -->
-        <section id="receitas">
-            <!-- Nossas receitas -->
-            <section id="tablet">
-                <h1 id="titulo">Principais receitas:</h1>
-                <article>
-                    <h1 id="titulo2">Principais receitas:</h1>
-                    <!-- div para ficar em 1 coluna no mobile -->
-                    <div class="uma-coluna">
-                        <!-- nav que redireciona para a receita de massa de panqueca -->
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-QmzcVS759pN2TxQimcvgdhDi_YIzUy_1Dg&s"
-                            width="300">
-
-                        <div class="alinhar">
-                            <a href="panqueca.html">Massa de Panqueca</a>
-                            <p>Ingredientes e preparo: </p>
-
+                <!-- div carrousel desktop -->
+                <div class="desktop">
+                    <div id="carouselExampleAutoplaying" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <!-- itens carrousel -->
+                        <div class="carousel-inner">
+                            <!-- card Esfiha de carne -->
+                            <div class="carousel-item active py-3 px-4 w-100" data-bs-interval="3000">
+                                <div class="card">
+                                    <img src="imagens/Esfiha de carne.jpg" class="d-block w-100 , card-img-top"
+                                        alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Esfiha de Carne</h5>
+                                        <p class="card-text">Nessa Receita você aprendera a fazer Esfihas de carne</p>
+                                        <a href="#" class="btn btn-primary stretched-link">Visite a receita</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card Bolinho de arroz -->
+                            <div class="carousel-item py-3 px-4 w-100" data-bs-interval="3000">
+                                <div class="card">
+                                    <img src="imagens/Bolinho de arroz.jpg" class="d-block w-100 , card-img-top"
+                                        alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Bolinhos De Arroz</h5>
+                                        <p class="card-text">Nessa receita você aprendera a fazer Bolinho de Arroz</p>
+                                        <a href="#" class="btn btn-primary stretched-link">Visite a receita</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-
+                        <!-- controles carrousel -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     </div>
-                    <div class="uma-coluna">
-                        <!-- nav que redireciona para a receita de Bolo Formigueiro -->
-
-                        <img src="https://assets.unileversolutions.com/recipes-v2/214857.jpg?im=Resize,height=372;Crop,size=(932,372),gravity=Center"
-                            alt="Bolo Formigueiro" width="300">
-
-                        <div class="alinhar">
-
-                            <a href="Bolo-formigueiro.html">Bolo Formigueiro</a>
-                            <p>Ingredientes e preparo:</p>
-
+                    <!-- div para display flex -->
+                    <div id="carouselExampleAutoplaying" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <!-- itens carousle -->
+                        <div class="carousel-inner">
+                            <!-- card Brownie -->
+                            <div class="carousel-item active py-3 px-4 w-100" data-bs-interval="3000">
+                                <div class="card">
+                                    <img src="imagens/brownie.jpg" class="d-block w-100 , card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Brownie</h5>
+                                        <p class="card-text">Nessa Receita você aprendera como fazer brownie</p> <br>
+                                        <a href="#" class="btn btn-primary stretched-link">Visite a receita</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card Feijoada -->
+                            <div class="carousel-item py-3 px-4 w-100" data-bs-interval="3000">
+                                <div class="card">
+                                    <img src="imagens/Feijoada.jpg" class="d-block w-100 , card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Feijoada</h5><br>
+                                        <p class="card-text">Nessa receita você aprendera a fazer feijoada</p>
+                                        <a href="#" class="btn btn-primary stretched-link">Visite a receita</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+                        <!-- controle carrousel -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     </div>
-
-                    <!-- div para ficar em 1 coluna no mobile -->
-                    <div class="uma-coluna">
-                        <!-- nav que redireciona para a receita de mingau-->
-                        <img src="https://assets.unileversolutions.com/recipes-v2/237400.jpg?im=Resize,height=372;Crop,size=(932,372),gravity=Center"
-                            width="300">
-
-                        <div class="alinhar">
-                            <a href="Mingau.html">Mingau</a>
-                            <p>Ingredientes e preparo: </p>
+                    <!-- div para display flex -->
+                    <div id="carouselExampleAutoplaying" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <!-- itens carrousel -->
+                            <div class="carousel-item active py-3 px-4 w-100" data-bs-interval="3000">
+                                <!-- card Maionese Verde -->
+                                <div class="card">
+                                    <img src="imagens/Maionese verde.jpg" class="d-block w-100 , card-img-top"
+                                        alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Maionese Verde</h5>
+                                        <p class="card-text">Nessa Receita você aprendera a fazer Maionese Verde</p>
+                                        <a href="#" class="btn btn-primary stretched-link">Visite a receita</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card Sushi-->
+                            <div class="carousel-item py-3 px-4 w-100" data-bs-interval="3000">
+                                <div class="card">
+                                    <img src="imagens/Sushi.jpg" class="d-block w-100 , card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Sushi</h5><br>
+                                        <p class="card-text">Nessa Receita você aprendera a fazer sushi</p>
+                                        <a href="#" class="btn btn-primary stretched-link">Go somewhere</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-
+                        <!-- controles carrousel -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     </div>
-                </article>
-                <hr>
-                <h1 id="titulo">Receitas Recentes:</h1>
-                <article>
-                    <h1 id="titulo2">Receitas Recentes:</h1>
-                    <div class="uma-coluna">
-                        <!-- nav que redireciona para a receita de Soljanka -->
-
-                        <img src="imagens/soljanka.jfif" alt="Soljanka" width="150" id="soljanka">
-
-                        <div class="alinhar">
-
-                            <a href="sojvaska.html">Soljanka</a>
-                            <p>Ingredientes e preparo:</p>
-
-                        </div>
-                    </div>
-                    <!-- div para ficar em 1 coluna no mobile -->
-                    <div class="uma-coluna">
-                        <!-- nav que redireciona para a receita de Sushi -->
-                        <img src="imagens/Sushi.jfif"
-                            width="300">
-
-                        <div class="alinhar">
-                            <a href="sushi.html">Sushi</a>
-                            <p>Ingredientes e preparo: </p>
-
-                        </div>
-
-                    </div>
-                    <div class="uma-coluna">
-                        <!-- nav que redireciona para a receita de Bolo Formigueiro -->
-
-                        <img src="https://assets.unileversolutions.com/recipes-v2/214857.jpg?im=Resize,height=372;Crop,size=(932,372),gravity=Center"
-                            alt="Bolo Formigueiro" width="300">
-
-                        <div class="alinhar">
-
-                            <a href="feijoada.html">Bolo Formigueiro</a>
-                            <p>Ingredientes e preparo:</p>
-
-                        </div>
-                    </div>
-                </article>
-            </section>
-        </section>
-
-    </main>
-
-    <footer>
-        <!--Footer indicativo, indica o propósito do desenvolvimento deste conteúdo -->
-        <div>
-            <p>
-                Este projeto é desenvolvido em conjunto com a disciplina de Programação Web I
+                </div>
                 <br>
-                a finalidade de estudar e aprofundar os conhecimentos em HTML, CSS e JS
-                <br><br>
-                © Copyright 2024 pertence a Pietro Gimenez, Pedro Aguiar e Pedro Zago
-                <br>
-                - Todos os Direitos reservados -
-            </p>
-        </div>
-
-        <div id="links_footer">
-            <p>
-                <!-- links do footer -->
-                Receitas pelo mundo
-                <br><br>
-                <a href="">Termos e condições de uso</a>
-                <br>
-                <a href="">Política de privacidade</a>
-                <br>
-                <a href="">Política de Cookies</a>
-            </p>
-        </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+                <h1 class="d-flex justify-content-around">Nossas Principais receitas</h1>
+                <!-- div conteudo mobile -->
+                <div class="mobile">
+                    <!-- cards conteudo mobile -->
+                    <div class="py-3 px-4">
+                        <div class="card">
+                            <img src="imagens/Nhoquyew.jfif" class="d-block w-100 , card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Nhoque</h5>
+                                <p class="card-text">Nessa Receita você aprendera a fazer Nhoque</p><br>
+                                <a href="esfihacarne.html" class="btn btn-primary stretched-link">Visite a Receita</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="py-3 px-4">
+                        <div class="card">
+                            <img src="imagens/massa de piza.jfif" class="d-block w-100 , card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Massa de Pizza</h5>
+                                <p class="card-text">Nessa Receita você aprendera a fazer Massa de pizza</p>
+                                <a href="esfihacarne.html" class="btn btn-primary stretched-link">Visite a Receita</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="py-3 px-4">
+                        <div class="card">
+                            <img src="imagens/Tarte tatin.jfif" class="d-block w-100 , card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Tarte Tartin</h5>
+                                <p class="card-text">Nessa Receita você aprendera a fazer Tarte Tartin</p><br>
+                                <a href="esfihacarne.html" class="btn btn-primary stretched-link">Visite a Receita</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h1 class="d-flex justify-content-around">Recentemente Adicionadas</h1>
+                <div class="mobile">
+                    <!-- cards conteudo mobile -->
+                    <div class="py-3 px-4">
+                        <div class="card">
+                            <img src="imagens/Bolinho de bacalhau.jfif" class="d-block w-100 , card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Bolinho de Bacalhau</h5>
+                                <p class="card-text">Nessa Receita você aprendera a fazer Bolinho de Bacalhau</p>
+                                <a href="esfihacarne.html" class="btn btn-primary stretched-link">Visite a Receita</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="py-3 px-4">
+                        <div class="card">
+                            <img src="imagens/Hamburguer vegano.jfif" class="d-block w-100 , card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Hamburguer Vegano</h5>
+                                <p class="card-text">Nessa Receita você aprendera a fazer Hamburguer Vegano </p>
+                                <a href="esfihacarne.html" class="btn btn-primary stretched-link">Visite a Receita</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="py-3 px-4">
+                        <div class="card">
+                            <img src="imagens/Chicken tikka.jfif" class="d-block w-100 , card-img-top" alt="esfiha de carne">
+                            <div class="card-body">
+                                <h5 class="card-title">Chicken Tikka</h5>
+                                <p class="card-text">Nessa Receita você aprendera a fazer Chicken Tikka</p>
+                                <a href="esfihacarne.html" class="btn btn-primary stretched-link">Visite a Receita</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
 </body>
 
 </html>
